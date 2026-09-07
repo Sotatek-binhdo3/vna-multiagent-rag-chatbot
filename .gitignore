@@ -1,0 +1,37 @@
+# === Bí mật — tuyệt đối không commit ===
+.env
+.env.local
+*.key
+
+# === Môi trường Python ===
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# === Dữ liệu sinh ra từ pipeline (chạy lại bằng app.ingest) ===
+data/pages/
+data/parsed/
+data/qdrant/
+data/qdrant_test/
+
+# === Tài liệu nguồn (139 MB, không đưa lên repo) ===
+*.pdf
+!docs/*.pdf
+
+# === Tài liệu và nhật ký nội bộ, giữ ở máy ===
+*.docx
+TRANGTHAI.md
+
+# === Rác tạm ===
+_preview.pdf
+_pv/
+*.tmp
+
+# === Hệ điều hành / IDE ===
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

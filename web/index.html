@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VNA Technical Chatbot — POC Multi-Agent RAG</title>
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>VNA Technical Chatbot</h1>
+        <p id="docName">Báo cáo thường niên 2024 — Vietnam Airlines</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="panes">
+    <section class="chat-pane">
+      <div id="messages" class="messages"></div>
+      <form id="composer" class="composer" autocomplete="off">
+        <textarea id="input" rows="1" placeholder="Hỏi về báo cáo thường niên 2024…"></textarea>
+        <button type="submit" id="sendBtn">Gửi</button>
+      </form>
+      <div class="suggestions" id="suggestions"></div>
+    </section>
+
+    <aside class="source-pane" id="sourcePane">
+      <div class="source-head">
+        <h2 id="sourceTitle">Nguồn</h2>
+        <button id="closeSource" class="ghost" title="Đóng">✕</button>
+      </div>
+      <div class="source-meta" id="sourceMeta">
+        Chọn một trích dẫn để xem trang gốc.
+      </div>
+      <div class="source-body" id="sourceBody"></div>
+    </aside>
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
