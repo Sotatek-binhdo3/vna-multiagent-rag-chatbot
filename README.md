@@ -17,8 +17,7 @@ trả lời kèm citation dẫn được về đúng trang tài liệu, không b
 
 ## 1. Kiến trúc
 
-![Kiến trúc hệ thống](docs/so-do-kien-truc.png)
-
+![Kiến trúc hệ thống]
 
 **Hai agent tách bạch thật sự:**
 `Orchestrator` ([app/agents/orchestrator.py](app/agents/orchestrator.py)) không hề import
